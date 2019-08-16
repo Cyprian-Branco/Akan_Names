@@ -22,3 +22,8 @@ function readInput(){
     }
 
 }
+// this will calculate the specific day of the birthday
+    var dayOfTheWeek = ((((century/4) -2*century-1) + ((5*year/4)) + ((26*(month+1)/10)) + month) %7) -1;
+
+    var femaleGender=document.getElementById("female");
+    var maleGender=document.getElementById("male");
