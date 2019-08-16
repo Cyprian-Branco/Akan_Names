@@ -1,4 +1,8 @@
+//Declaring variables
 var century, year, month, date;
+
+var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+var femaleNames =["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
 //validate the inputs 
 function readInput(){
@@ -37,7 +41,7 @@ if(maleGender.checked){
 
 //this will check the returned value if it's male or female it will display the akan name
 if (maleValue === "male"){
-    document.getElementById("display").innerHTML="Your Akan name is " + maleNames[dayOfTheWeek];
+    document.getElementById("show").innerHTML="Your Akan name is " + maleNames[dayOfTheWeek];
 }else{
-    document.getElementById("display").innerHTML="Your Akan name is" + femaleNames[dayOfTheWeek];
+    document.getElementById("show").innerHTML="Your Akan name is" + femaleNames[dayOfTheWeek];
 }
