@@ -27,3 +27,13 @@ function readInput(){
 
     var femaleGender=document.getElementById("female");
     var maleGender=document.getElementById("male");
+
+//check for gender option input and get it's value
+if(maleGender.checked){
+    var maleValue = maleGender.value;
+}else if(femaleGender.checked){
+    var femaleValue = maleGender.value;
+}
+
+//this will check the returned value if it's male or female it will display the akan name
+if maleValue
