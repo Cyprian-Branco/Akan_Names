@@ -36,4 +36,8 @@ if(maleGender.checked){
 }
 
 //this will check the returned value if it's male or female it will display the akan name
-if maleValue
+if (maleValue === "male"){
+    document.getElementById("display").innerHTML="Your Akan name is " + maleNames[dayOfTheWeek];
+}else{
+    document.getElementById("display").innerHTML="Your Akan name is" + femaleNames[dayOfTheWeek];
+}
