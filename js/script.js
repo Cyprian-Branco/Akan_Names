@@ -1,0 +1,9 @@
+var century, year, month, date;
+
+//validate the inputs 
+function readInput(){
+    century = parseInt(document.getElementById("century").value);
+    year = parseInt(document.getElementById("year").value);
+    month = parseInt(document.getElementById("month").value);
+    date = parseInt(document.getElementById("date").value);
+ 
