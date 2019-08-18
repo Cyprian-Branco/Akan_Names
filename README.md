@@ -25,3 +25,4 @@ Auther username: **Cyprian-Branco**
 Email: bowencyprian@gmail.com
         bowencyprian@outlook.com
 ## License and Cpyright
+MIT License Copyright (c) 2019 Cyprian-Branco
