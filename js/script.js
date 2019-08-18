@@ -1,21 +1,19 @@
-//Declaring variables
-var century, year, month, date;
-
+// Declaring the array
+var femaleNames=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 var maleNames=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-var femaleNames =["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
-//validate the inputs 
-function readInput(){
-    century = parseInt(document.getElementById("century").value);
-    year = parseInt(document.getElementById("year").value);
-    month = parseInt(document.getElementById("month").value);
-    date = parseInt(document.getElementById("date").value);
- 
-//Give alert if the input data is outside the range
-    if (century < 0 || century >= 22){
+// create a function that would be called in the HTML file
+function outputNames(){
+
+    // Declaring variable intouts
+    var date=parseFloat(document.getElementById("Date").value);
+    var month=parseFloat(document.getElementById("Month").value);
+    var year=parseFloat(document.getElementById("Year").value);
+    //Give alert if the input data is outside the range
+    if (century < 0 || century > 21){
         alert("Enter a valid century");
         return false;
-    } else if ( year < 0 || year >= 2020){
+    }else if ( year < 0 || year >= 2020){
         alert("Enter a valid year")
         return false;
     } else if (month < 0 || month > 12){
@@ -25,23 +23,26 @@ function readInput(){
         alert("Enter a valid date");
     }
 
-}
-// this will calculate the specific day of the birthday
-    var dayOfTheWeek = ((((century/4) -2*century-1) + ((5*year/4)) + ((26*(month+1)/10)) + month) %7) -1;
+    // This will calculate the specific day of the month
+    var century=(year-1)/100+1;
+    var dayOfWeek=Math.floor( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date ) % 7;
+    var theMaleGender=document.getElementById("male");
+    var theFemaleGender=document.getElementById("female");
+  
+    // check  for fender inout
+    if(theMaleGender.checked){
+        var theMaleValue = theMaleGender.value;
+    }else if(theFemaleGender.checked){
+        var theFemaleValue = theFemaleGender.value;
+    }
+    // check if the value returned is correct and then display the matching akan
+    if(theMaleValue==="male"){
 
-    var femaleGender=document.getElementById("female");
-    var maleGender=document.getElementById("male");
+        document.getElementById("display").innerHTML="Your Akan Name is "+maleNames[dayOfWeek];
 
-//check for gender option input and get it's value
-if(maleGender.checked){
-    var maleValue = maleGender.value;
-}else if(femaleGender.checked){
-    var femaleValue = maleGender.value;
-}
+    }else{
 
-//this will check the returned value if it's male or female it will display the akan name
-if (maleValue === "male"){
-    document.getElementById("show").innerHTML="Your Akan name is " + maleNames[dayOfTheWeek];
-}else{
-    document.getElementById("show").innerHTML="Your Akan name is" + femaleNames[dayOfTheWeek];
+        document.getElementById("display").innerHTML="Your Akan Name is "+femaleNames[dayOfWeek];
+    }
+ 
 }
