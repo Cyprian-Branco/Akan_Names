@@ -10,3 +10,13 @@ h1 {
     text-decoration-line: darkkhaki;
     
 }
+.form-check-label{
+    margin-right:20px;
+}
+.col-lg-3{
+    margin:15px;
+    margin-right:75px;
+}
+button{
+    margin-top:10px;
+}
