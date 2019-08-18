@@ -18,7 +18,10 @@ Auther username: Cyprian-Branco
 1. Javascript - For DOM(Document Object Manipulation) scripts
 2. HTML - For building Mark Up pages/User Interface
 3. CSS - For Styling User Interface
+4. Bootsrap - for styling the Ui.
+5. Markdown - for creating the readme file
 
 #Contact information
-
+Email: bowencyprian@gmail.com
+        bowencyprian@outlook.com
 #License and Cpyright
