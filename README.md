@@ -2,7 +2,7 @@
 This is a simple web application which calculates the day of the week and matches the name to Akan community names. Akan is a tribe from Ghana.
 
 ## Author
-Auther username: **Cyprian-Branco**
+Author username: **Cyprian-Branco**
 
 ## Setup instructions
 -Download the zip file or clone the repository.
